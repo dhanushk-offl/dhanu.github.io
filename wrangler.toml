@@ -1,0 +1,14 @@
+name = "dhanushweb"
+type = "javascript"
+account_id = "c41777a685e3ad00430d4babfa2aa548"
+workers_dev = true
+compatibility_date = "2024-06-16"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_dir = "src"
+
+[build.upload]
+format = "service-worker"
+main = "dist/index.js"
